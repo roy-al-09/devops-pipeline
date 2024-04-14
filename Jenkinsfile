@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build Job') {
             steps {
-                job: 'build'
+                sh 'build'
             }
         }
 
         stage('Deploy Job') {
             steps {
-                job: 'deployed'
+                sh 'deployed'
 
             }
         }
